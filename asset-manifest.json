@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.668d3648.chunk.css",
+    "main.js": "/static/js/main.708be794.chunk.js",
+    "main.js.map": "/static/js/main.708be794.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.8a9b2612.chunk.js": "/static/js/2.8a9b2612.chunk.js",
+    "static/js/2.8a9b2612.chunk.js.map": "/static/js/2.8a9b2612.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.88ea0d70d4e346921d8445d9be6e1c85.js": "/precache-manifest.88ea0d70d4e346921d8445d9be6e1c85.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.668d3648.chunk.css.map": "/static/css/main.668d3648.chunk.css.map",
+    "static/js/2.8a9b2612.chunk.js.LICENSE.txt": "/static/js/2.8a9b2612.chunk.js.LICENSE.txt",
+    "static/media/commerce.png": "/static/media/commerce.36d1a70d.png",
+    "static/media/kevin.png": "/static/media/kevin.59edbe0a.png",
+    "static/media/starbucksclone.png": "/static/media/starbucksclone.c9e1b7fb.png",
+    "static/media/webmaniac.png": "/static/media/webmaniac.e15f665d.png",
+    "static/media/zinformatique.png": "/static/media/zinformatique.e5a93568.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.8a9b2612.chunk.js",
+    "static/css/main.668d3648.chunk.css",
+    "static/js/main.708be794.chunk.js"
+  ]
+}
