@@ -36,9 +36,9 @@ const Home = () => {
                 options={{
                   strings: [
                       'I searching alternance',
-                    'I like to create things.',
-                    'I love learning new tech.',
-                    'I love meeting new people.',
+                      'I like to create things.',
+                      'I love learning new tech.',
+                      'I love meeting new people.',
                   ],
                   autoStart: true,
                   loop: true,
