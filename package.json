@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kevinmaste.github.io/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -10,10 +11,14 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "apollo-boost": "^0.4.9",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.6.0",
-    "express": "^4.17.1",
+    "express": "^4.18.1",
     "graphql": "^15.7.2",
     "http": "0.0.1-security",
+    "nodemailer": "^6.7.7",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-is-visible": "^1.1.2",
@@ -26,6 +31,8 @@
     "typewriter-effect": "^2.18.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

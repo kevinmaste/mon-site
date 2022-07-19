@@ -28,15 +28,17 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navlink-wrapper">
+          <Link to="project" spy={true} smooth={true} duration={500}>
+            PROJECT
+          </Link>
+        </div>
+        {/*grisser appres*/}
+         <div className="navlink-wrapper">
           <Link to="experience" spy={true} smooth={true} duration={500}>
             EXPERIENCE
           </Link>
         </div>
-        {/* <div className="navlink-wrapper">
-          <Link to="projects" spy={true} smooth={true} duration={500}>
-            PROJECTS
-          </Link>
-        </div> */}
+        {/*grisser appres*/}
         <div className="navlink-wrapper">
           <Link to="contact" spy={true} smooth={true} duration={500}>
             CONTACT
@@ -63,4 +65,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

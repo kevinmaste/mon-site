@@ -3,6 +3,7 @@ import './ContactForm.css'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
+import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   email: {
@@ -71,25 +72,33 @@ const ContactForm = () => {
 
   const classes = useStyles()
 
+  const refresh =()=>{
+    setEmailText('')
+    setMessageText('')
+  }
+
   const submitForm = (ev) => {
     ev.preventDefault()
-    const form = ev.target
-    const data = new FormData(form)
-    const xhr = new XMLHttpRequest()
-    xhr.open(form.method, form.action)
-    xhr.setRequestHeader('Accept', 'application/json')
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if (xhr.status === 200) {
-        setEmailText('')
-        setMessageText('')
-        form.reset()
-        setStatus('SUCCESS')
-      } else {
-        setStatus('ERROR')
-      }
+    if (emailText===undefined || messageText===undefined){
+      alert("Error you can't sign the message")
     }
-    xhr.send(data)
+    axios({
+      method: 'POST',
+      url: 'https://send-app-m.herokuapp.com/send',
+      data:{
+        name:emailText,
+        objet:'Message reçu',
+        message:messageText
+      }
+    })
+        .then((response)=>{
+          if (response.data.msg === 'success'){
+            setStatus('SUCCESS')
+            refresh()
+          }else if (response.data.msg === 'fail'){
+            setStatus("ERROR")
+          }
+        })
   }
 
   const handleEmailChange = (event) => {
@@ -107,7 +116,6 @@ const ContactForm = () => {
       <form
         className="contact-form"
         onSubmit={submitForm}
-        action="https://formspree.io/mvolplar"
         method="POST"
       >
         <TextField

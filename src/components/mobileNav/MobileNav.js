@@ -44,10 +44,11 @@ const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
               EXPERIENCE
             </Link>
           </div>
-          <div className="mobilenavlink">
+          {/*Put it maybe after*/}
+          {<div className="mobilenavlink">
             <Link
               activeClass="active"
-              to="projects"
+              to="project"
               spy={true}
               smooth={true}
               duration={500}
@@ -55,7 +56,7 @@ const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
             >
               PROJECTS
             </Link>
-          </div>
+          </div>}
           <div className="mobilenavlink">
             <Link
               activeClass="active"

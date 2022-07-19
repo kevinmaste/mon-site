@@ -1,0 +1,36 @@
+{
+  "experience": [
+    {
+      "id": 0,
+      "link": "https://www.zinformatique.com/",
+      "company": "Zinformatique",
+      "title": "Z Informatique",
+      "dateFrom": "August 2020",
+      "dateTo": "November 2020",
+      "info": [
+        "Z Informatique,management of orders made by the customer, thanks to the commercial software CIEL",
+        "Management of customer, professional or private equipment breakdowns,"
+      ],
+      "stack": ["Hardware", "Ciel","Computer","commerce"],
+      "logoheight": 80,
+      "colourPrimary": "linear-gradient(to bottom, #000, #f28d25)",
+      "colourSecondary": "linear-gradient(to bottom, #f4592b, #f28d25)"
+    },
+    {
+      "id": 1,
+      "link": "https://web-maniac.com/",
+      "company": "Webmaniac",
+      "title": "Web-maniac",
+      "dateFrom": "October 2022",
+      "dateTo": "november 2022",
+      "info": [
+        "Webmaniac digital marketing agency,",
+        "Website development, with CMS tools like WordPress, video editing with Shortcup, and use according to demand of Adobe XD, Illustrator. "
+      ],
+      "stack": ["CMS", "WordPress","Shortcup","Adobe XD"],
+      "logowidth": 80,
+      "colourPrimary": "linear-gradient(to bottom, #000, #1f3470)",
+      "colourSecondary": "linear-gradient(to bottom, #465a90, #1e3470)"
+    }
+  ]
+}

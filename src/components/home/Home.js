@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect'
 import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle'
 import Navbar from '../navbar/Navbar'
 import config from '../../config'
-import profile from '../../images/matt.png'
+import profile from '../../images/kevin.png'
 import linkedin from '../../images/social/linkedin.png'
 
 const Home = () => {
@@ -21,12 +21,12 @@ const Home = () => {
           <Fade bottom distance="40px">
             <img
               className="profile"
-              alt="m.jigalin profile"
+              alt="kevin.b profile"
               src={profile}
               onLoad={() => setImageLoaded(true)}
             />
             <h1 className="greeting-text">
-              Hi, I'm <span className="name">Matthew Jigalin</span>.{' '}
+              Hi, I'm <span className="name">Kevin Bitoumbou</span>.{' '}
               <span className="wave-emoji" role="img" aria-label="waving hand">
                 👋
               </span>
@@ -35,10 +35,10 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    'I like to design things.',
+                      'I searching alternance',
+                    'I like to create things.',
                     'I love learning new tech.',
                     'I love meeting new people.',
-                    'I create unique digital experiences.',
                   ],
                   autoStart: true,
                   loop: true,
@@ -51,7 +51,7 @@ const Home = () => {
             <Bounce cascade>
               <div className="links">
                 <a
-                  href="https://www.linkedin.com/in/mjigalin/"
+                  href="https://www.linkedin.com/in/kevin-bitoumbou-biboka-6966b0156/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
